@@ -1,2 +1,2 @@
-# Musa-Emin-Chingiz
+# InfoChem
 Layihə 1 ilə bağlı iş
