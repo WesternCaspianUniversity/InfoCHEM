@@ -1,2 +1,5 @@
 # InfoChem
-Layihə 1 ilə bağlı iş
+
+Simple Firewall Solition for iptables on linux
+
+This Program writed on Python Programming Language and some Pythons Libraries.
