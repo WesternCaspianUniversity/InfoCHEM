@@ -1,5 +1,6 @@
 from tkinter import *
 import os
+from PIL import ImageTk, Image
 
 root = Tk()
 root.geometry("400x250")
@@ -16,21 +17,26 @@ def add_rule_without_port():
     root.destroy()
 
 '''Buttons'''
-button1 = Button(text="Add", bg="#FDD365", command=add_rule_without_port)
+button1 = Button(text="Add", bg="#E67E22", command=add_rule_without_port)
 button1.place(x=85,y=200)
 
-button2 = Button(root,text="Cancel", bg="#FDD365", command=cancel)
+button2 = Button(root,text="Cancel", bg="#E67E22", command=cancel)
 button2.place(x=250,y=200)
 
 '''Text Labels'''
-text=Label(background="#424F55", text="INPUT RULE", fg="#E67E22", font=("Roboto", 25))
-text.place(x=98,y=30)
+text=Label(background="#424F55", text="INPUT RULE", fg="#E67E22", font=("Roboto", 25, 'bold'))
+text.place(x=50,y=25)
 
-text1=Label(text="Source IP Address: ", bg="#424F55", fg="#FDD365")
-text1.place(x=55, y=102)
+'''Logo'''
+addimg = ImageTk.PhotoImage(Image.open("little_add.png"))
+little_add=Label(image=addimg, bg="#424F55")
+little_add.place(x=300,y=12)
 
-text2=Label(text="Mode: ", bg="#424F55", fg="#FDD365")
-text2.place(x=55, y=150)
+text1=Label(text="Source IP Address: ", bg="#424F55", fg="#E67E22", font=("Roboto", 9, 'bold'))
+text1.place(x=50, y=102)
+
+text2=Label(text="Mode: ", bg="#424F55", fg="#E67E22", font=("Roboto", 9, 'bold'))
+text2.place(x=50, y=150)
 
 '''Entries'''
 ipentry=StringVar()
