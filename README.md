@@ -12,4 +12,4 @@ This Program writed on Python Programming Language and some Python's Libraries.
  - Login with your username and password.
 
 # ScreenShot
-![Screenshot](https://github.com/WesternCaspianUniversity/InfoCHEM/blob/main/screen.png)
+![Screenshot](https://github.com/WesternCaspianUniversity/InfoCHEM/blob/main/mockup.png)
